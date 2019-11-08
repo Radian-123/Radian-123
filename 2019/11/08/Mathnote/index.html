@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="WangTao">
 <meta property="og:description" content="生活中遇到的微积分题  觉得有点东西的就随手写个博客">
 <meta property="og:locale" content="ch">
-<meta property="og:updated_time" content="2019-11-08T11:29:15.468Z">
+<meta property="og:updated_time" content="2019-11-08T11:48:46.655Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="WangTao" type="application/atom+xml">
@@ -167,7 +167,7 @@
 <script type="math/tex; mode=display">
   \begin{aligned}
     lim_{x \to 0} \frac{6 + f(x)}{x^2}
-  \end{aligned}</script><p>  看到这个题的第一眼觉得分子分母同时除以$x$即可，但是这是错误的，因为等价无穷小在加减时是不可以代换的。<br>  正好今天做模拟题的时候也看见这类似的了，然后自己想了一种泰勒展开的方式做。<br>  设$g(x) = sin6x + x \cdot f(x)$，易得$g(x) = o(x^3)$，求导得</p>
+  \end{aligned}</script><p>  看到这个题的第一眼觉得分子分母同时除以$x$即可，但是这是错误的，因为等价无穷小在<del>加减时</del>是不可以代换的。<br>  <strong>UPD:菲菲说加的时候是可以代换的，减的时候不能换是因为可能改变阶，而加的时候不会改变阶</strong><br>  正好今天做模拟题的时候也看见这类似的了，然后自己想了一种泰勒展开的方式做。<br>  设$g(x) = sin6x + x \cdot f(x)$，易得$g(x) = o(x^3)$，求导得</p>
 <script type="math/tex; mode=display">
   \begin{aligned}
       g'(x) &= 6 \cdot cos6x+x \cdot f'(x)+f(x) \\
@@ -184,7 +184,8 @@
       & \lim_{x \to 0}\frac{6 + f(x)}{x^2}\\
       = & \lim_{x \to 0}\frac{-36x^2 + o(x^2)}{x^2}\\
       = & -36
-  \end{aligned}</script>
+  \end{aligned}</script><p>  <strong>UPD:菲菲告诉我这道题没说f可导，所以我这个做法是错的。呜呜我是猪</strong></p>
+
       
 
       
@@ -363,7 +364,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: true,
+		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
