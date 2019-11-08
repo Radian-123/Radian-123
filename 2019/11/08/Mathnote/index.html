@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>WangTao</title>
+  <title>数学题杂记 | WangTao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="WangTao">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="生活中遇到的微积分题  觉得有点东西的就随手写个博客">
+<meta name="keywords" content="微积分">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数学题杂记">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;08&#x2F;Mathnote&#x2F;index.html">
 <meta property="og:site_name" content="WangTao">
+<meta property="og:description" content="生活中遇到的微积分题  觉得有点东西的就随手写个博客">
 <meta property="og:locale" content="ch">
+<meta property="og:updated_time" content="2019-11-08T11:29:15.468Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="WangTao" type="application/atom+xml">
@@ -133,16 +137,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Mathnote" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Mathnote" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/08/Mathnote/">数学题杂记</a>
+    <h1 class="article-title" itemprop="name">
+      数学题杂记
     </h1>
   
 
@@ -156,11 +158,56 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="生活中遇到的微积分题"><a href="#生活中遇到的微积分题" class="headerlink" title="生活中遇到的微积分题"></a>生活中遇到的微积分题</h1><p>  觉得有点东西的就随手写个博客</p>
-        
-          <a class="article-more-a" href="/2019/11/08/Mathnote/#more">more >></a>
-        
+<a id="more"></a>
+<h2 id="1-已知一个函数的极限，用泰勒展开求另一个函数的极限-2019-11-8"><a href="#1-已知一个函数的极限，用泰勒展开求另一个函数的极限-2019-11-8" class="headerlink" title="1.已知一个函数的极限，用泰勒展开求另一个函数的极限(2019-11-8)"></a>1.已知一个函数的极限，用泰勒展开求另一个函数的极限(2019-11-8)</h2><p>  脑煜熏的作业题，已知</p>
+<script type="math/tex; mode=display">
+  \begin{aligned}
+    lim_{x \to 0} \frac{sin6x + x \cdot f(x)}{x^3} = 0
+  \end{aligned}</script><p>  求</p>
+<script type="math/tex; mode=display">
+  \begin{aligned}
+    lim_{x \to 0} \frac{6 + f(x)}{x^2}
+  \end{aligned}</script><p>  看到这个题的第一眼觉得分子分母同时除以$x$即可，但是这是错误的，因为等价无穷小在加减时是不可以代换的。<br>  正好今天做模拟题的时候也看见这类似的了，然后自己想了一种泰勒展开的方式做。<br>  设$g(x) = sin6x + x \cdot f(x)$，易得$g(x) = o(x^3)$，求导得</p>
+<script type="math/tex; mode=display">
+  \begin{aligned}
+      g'(x) &= 6 \cdot cos6x+x \cdot f'(x)+f(x) \\
+      g''(x) &= -36 \cdot sin6x+x \cdot f''(x)+2f'(x) \\
+      g'''(x) &= -216 \cdot cos6x+x \cdot f'''(x)+3f'''(x)
+  \end{aligned}</script><p>  故$g(0) = g’(0) = g’’(0) = g’’’(0) = 0$，可求得</p>
+<script type="math/tex; mode=display">
+  \begin{aligned}
+      f(0) & = -6 \\
+      f'(0) & = 0 \\
+      f''(0) & = -72 \\
+  \end{aligned}</script><p>  故</p>
+<script type="math/tex; mode=display">\begin{aligned}
+      & \lim_{x \to 0}\frac{6 + f(x)}{x^2}\\
+      = & \lim_{x \to 0}\frac{-36x^2 + o(x^2)}{x^2}\\
+      = & -36
+  \end{aligned}</script>
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>菲菲是我的小媳妇<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -180,16 +227,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/08/Mathnote/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/08/Mathnote/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/11/08/new%20blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">啊建立了一个新博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -204,78 +310,32 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-new blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/08/new%20blog/">啊建立了一个新博客</a>
-    </h1>
-  
-
-        
-        <a href="/2019/11/08/new%20blog/" class="archive-article-date">
-  	<time datetime="2019-11-08T08:08:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="哈哈"><a href="#哈哈" class="headerlink" title="哈哈"></a>哈哈</h1>
-        
-          <a class="article-more-a" href="/2019/11/08/new%20blog/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/08/new%20blog/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#生活中遇到的微积分题"><span class="toc-number">1.</span> <span class="toc-text">生活中遇到的微积分题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-已知一个函数的极限，用泰勒展开求另一个函数的极限-2019-11-8"><span class="toc-number">1.1.</span> <span class="toc-text">1.已知一个函数的极限，用泰勒展开求另一个函数的极限(2019-11-8)</span></a></li></ol></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
+  
+  
+  
 
   
+
+  
+
   
 
 
@@ -298,8 +358,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
