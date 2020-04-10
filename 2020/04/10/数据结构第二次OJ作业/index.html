@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | WangTao</title>
+  <title>数据结构第二次OJ作业 | WangTao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="欢迎来到我的小屋">
-<meta property="og:type" content="website">
-<meta property="og:title" content="WangTao">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;page&#x2F;2&#x2F;index.html">
+  <meta name="description" content="这里是我的第二次OJ作业文档">
+<meta name="keywords" content="编程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构第二次OJ作业">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;04&#x2F;10&#x2F;%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%AC%E4%BA%8C%E6%AC%A1OJ%E4%BD%9C%E4%B8%9A&#x2F;index.html">
 <meta property="og:site_name" content="WangTao">
-<meta property="og:description" content="欢迎来到我的小屋">
+<meta property="og:description" content="这里是我的第二次OJ作业文档">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-04-10T13:46:01.076Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="WangTao" type="application/atom+xml">
@@ -143,133 +145,256 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-数据结构第二次OJ作业" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      数据结构第二次OJ作业
+    </h1>
+  
+
+        
+        <a href="/2020/04/10/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%AC%E4%BA%8C%E6%AC%A1OJ%E4%BD%9C%E4%B8%9A/" class="archive-article-date">
+  	<time datetime="2020-04-10T13:35:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-10</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这里是我的第二次OJ作业文档<br><a id="more"></a></p>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<p><strong>Table of Contents</strong>  <em>generated with <a href="https://github.com/thlorenz/doctoc" target="_blank" rel="noopener">DocToc</a></em></p>
+<ul>
+<li><a href="#%E7%83%A4%E9%A6%8D%E7%89%87">烤馍片</a><ul>
+<li><a href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0">题目描述</a></li>
+<li><a href="#code">code</a></li>
+</ul>
+</li>
+<li><a href="#priorityq">priorityQ</a><ul>
+<li><a href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-1">题目描述</a></li>
+<li><a href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF">解题思路</a></li>
+</ul>
+</li>
+<li><a href="#q">Q</a><ul>
+<li><a href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-2">题目描述</a></li>
+<li><a href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-1">解题思路</a></li>
+<li><a href="#code-1">code</a></li>
+</ul>
+</li>
+<li><a href="#%E5%BD%A9%E8%99%B9">彩虹</a><ul>
+<li><a href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-3">题目描述</a></li>
+<li><a href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-2">解题思路</a></li>
+<li><a href="#code-2">code</a></li>
+</ul>
+</li>
+<li><a href="#stack">stack</a><ul>
+<li><a href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-4">题目描述</a></li>
+<li><a href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-3">解题思路</a></li>
+<li><a href="#code-3">code</a></li>
+</ul>
+</li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<h1 id="烤馍片"><a href="#烤馍片" class="headerlink" title="烤馍片"></a>烤馍片</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>求KMP算法的next数组.没什么解题思路.</p>
+<h2 id="code"><a href="#code" class="headerlink" title="code"></a>code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span> ;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn = <span class="number">1e6</span>+<span class="number">5</span> ;</span><br><span class="line"><span class="keyword">int</span> n, Next[maxn] ;</span><br><span class="line"><span class="keyword">char</span> t[maxn] ;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i, j ;</span><br><span class="line">	<span class="built_in">scanf</span> (<span class="string">"%s"</span>, t+<span class="number">1</span>) ;</span><br><span class="line">	n = <span class="built_in">strlen</span>(t+<span class="number">1</span>) ;</span><br><span class="line">	j = Next[<span class="number">1</span>] = <span class="number">0</span> ;</span><br><span class="line">	<span class="keyword">for</span> ( i = <span class="number">2</span> ; i &lt;= n ; i ++ ) &#123;</span><br><span class="line">		<span class="keyword">for</span> ( ; j &amp;&amp; t[j + <span class="number">1</span>] != t[i] ; j = Next[j] ) ;</span><br><span class="line">		Next[i] = t[j + <span class="number">1</span>] == t[i]?++j:<span class="number">0</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> ( i = <span class="number">1</span> ; i &lt;= n ; i ++ )</span><br><span class="line">		<span class="built_in">printf</span> (<span class="string">"%d\n"</span>, Next[i]) ;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="priorityQ"><a href="#priorityQ" class="headerlink" title="priorityQ"></a>priorityQ</h1><h2 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h2><p>琦琦有很多颗彩虹糖，每一颗彩虹糖有一个美味度（是不超过 109 的非负整数）和一个正整数编号。不同的彩虹糖的编号一定不同，但可能有相同的美味度。</p>
+<p>琦琦有一个大大的袋子，用来存放彩虹糖，初始时袋子为空。</p>
+<p>琦琦每次会选择以下操作之一进行：</p>
+<ol>
+<li>琦琦买了一颗新的彩虹糖，并将其放到袋子中。</li>
+<li>琦琦从袋子中拿出其中<strong>最美味</strong>的彩虹糖。</li>
+<li>琦琦重新评价了某颗糖的美味程度，并将其放到袋子中（如果它当前不在袋子中）。</li>
+</ol>
+<p>每次操作后，琦琦需要知道袋子中最美味的糖的美味度。</p>
+<p>琦琦还要忙着去吃乔乔的棒棒糖，这么简单的任务当然就交给你来完成啦！</p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>用一个node记录棒棒糖,重载运算符之后丢进set里面.</p>
+<p>开一个数组val来记录棒棒糖目前的美味程度,-1代表不在袋子里面.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span> ;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn = <span class="number">1e6</span>+<span class="number">5</span> ;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span></span><br><span class="line">	<span class="keyword">int</span> id, val ;</span><br><span class="line">	<span class="keyword">friend</span> <span class="keyword">bool</span> <span class="keyword">operator</span> &lt; ( node a, node b ) &#123;</span><br><span class="line">		<span class="keyword">return</span> a.val==b.val?a.id&gt;b.id:a.val&lt;b.val ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">friend</span> <span class="keyword">bool</span> <span class="keyword">operator</span> == ( node a, node b ) &#123;</span><br><span class="line">		<span class="keyword">return</span> a.id==b.id&amp;&amp;a.val==b.val ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">friend</span> <span class="keyword">bool</span> <span class="keyword">operator</span> &gt; ( node a, node b ) &#123;</span><br><span class="line">		<span class="keyword">return</span> a.val==b.val?a.id&lt;b.id:a.val&gt;b.val ;</span><br><span class="line">	&#125;</span><br><span class="line">&#125; ;</span><br><span class="line"><span class="built_in">set</span> &lt;node&gt; s ;</span><br><span class="line"><span class="keyword">int</span> val[maxn] ;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> _, o, x, id = <span class="number">0</span> ;</span><br><span class="line">	<span class="built_in">scanf</span> (<span class="string">"%d"</span>, &amp;_) ;</span><br><span class="line">	<span class="keyword">while</span> (_--) &#123;</span><br><span class="line">		<span class="built_in">scanf</span> (<span class="string">"%d"</span>, &amp;o) ;</span><br><span class="line">		<span class="keyword">if</span> (o == <span class="number">1</span>) &#123;</span><br><span class="line">			<span class="built_in">scanf</span> (<span class="string">"%d"</span>, &amp;x) ;</span><br><span class="line">			val[++ id] = x ;</span><br><span class="line">			s.insert((node)&#123;id, x&#125;) ;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (o == <span class="number">2</span>) &#123;</span><br><span class="line">			<span class="keyword">if</span> (!s.empty()) &#123;</span><br><span class="line">				o = s.rbegin()-&gt;id ;</span><br><span class="line">				x = s.rbegin()-&gt;val ;</span><br><span class="line">				s.erase((node)&#123;o,x&#125;) ;</span><br><span class="line">				val[o] = <span class="number">-1</span> ;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="built_in">scanf</span> (<span class="string">"%d%d"</span>, &amp;o, &amp;x) ;</span><br><span class="line">			<span class="keyword">if</span> (o &lt;= id) &#123;</span><br><span class="line">				<span class="keyword">if</span> (val[o] == <span class="number">-1</span>) &#123;</span><br><span class="line">					val[o] = x ;</span><br><span class="line">					s.insert((node)&#123;o, x&#125;) ;</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">else</span> &#123;</span><br><span class="line">					s.erase(s.lower_bound((node)&#123;o, val[o]&#125;)) ;</span><br><span class="line">					s.insert((node)&#123;o, val[o] = x&#125;) ;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		x = s.empty()?<span class="number">-1</span>:(s.rbegin()-&gt;val) ;</span><br><span class="line">		<span class="built_in">printf</span> (<span class="string">"%d\n"</span>, x) ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="Q"><a href="#Q" class="headerlink" title="Q"></a>Q</h1><h2 id="题目描述-2"><a href="#题目描述-2" class="headerlink" title="题目描述"></a>题目描述</h2><p>琦琦有很多颗彩虹糖，每一颗彩虹糖有一个美味度（是不超过 109 的非负整数），不同的彩虹糖可能有相同的美味度。</p>
+<p>琦琦有一个大大的袋子，用来存放彩虹糖，初始时袋子为空。</p>
+<p>琦琦每次会选择以下操作之一进行：</p>
+<ol>
+<li>琦琦把一颗全新的彩虹糖放到袋子中。</li>
+<li>琦琦从袋子中拿出其中<strong>最早</strong>被放入袋子的那颗糖。</li>
+</ol>
+<p>每次操作后，琦琦需要知道袋子中最美味的糖的美味度。</p>
+<p>琦琦还要忙着去吃乔乔的棒棒糖，这么简单的任务当然就交给你来完成啦！</p>
+<h2 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h2><p>用一个queue存储现在袋子里有哪些糖,再用一个multiset用来输出最大的美味度.</p>
+<h2 id="code-1"><a href="#code-1" class="headerlink" title="code"></a>code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span> ;</span><br><span class="line"><span class="built_in">queue</span> &lt;<span class="keyword">int</span>&gt; Q ;</span><br><span class="line"><span class="built_in">multiset</span> &lt;<span class="keyword">int</span>&gt; s ;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> _, o, x ;</span><br><span class="line">	<span class="keyword">int</span> *p ;</span><br><span class="line">	<span class="built_in">scanf</span> (<span class="string">"%d"</span>, &amp;_) ;</span><br><span class="line">	<span class="keyword">while</span> (_--) &#123;</span><br><span class="line">		<span class="built_in">scanf</span> (<span class="string">"%d"</span>, &amp;o) ;</span><br><span class="line">		<span class="keyword">if</span> (o == <span class="number">1</span>) &#123;</span><br><span class="line">			<span class="built_in">scanf</span> (<span class="string">"%d"</span>, &amp;x) ;</span><br><span class="line">			Q.push(x) ;</span><br><span class="line">			s.insert(x) ;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (!Q.empty()) &#123;</span><br><span class="line">			x = Q.front() ;</span><br><span class="line">			s.erase(s.lower_bound(x)) ;</span><br><span class="line">			Q.pop() ;</span><br><span class="line">		&#125;</span><br><span class="line">		x = Q.empty()?<span class="number">-1</span>:(*s.rbegin()) ;</span><br><span class="line">		<span class="built_in">printf</span> (<span class="string">"%d\n"</span>, x) ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="彩虹"><a href="#彩虹" class="headerlink" title="彩虹"></a>彩虹</h1><h2 id="题目描述-3"><a href="#题目描述-3" class="headerlink" title="题目描述"></a>题目描述</h2><p>琦琦有很多颗彩虹糖，每一颗彩虹糖有一个美味度（是不超过 109 的非负整数），不同的彩虹糖可能有相同的美味度。</p>
+<p>初始时，琦琦将所有的彩虹糖排成一个<strong>环</strong>，并会依次告诉你环上每颗糖的美味度。之后的每秒钟，琦琦会找出美味度极大的若干颗彩虹糖，并把它们<strong>同时</strong>吃掉。“极大”在这里指：如果某颗糖的美味度同时<strong>大于等于</strong>与它相邻的两颗糖的美味度，则认为这颗糖为美味度极大。（注：如果在某个时刻仅剩两颗糖，则这两颗糖互为相邻；如果在某个时刻仅剩一颗糖，则它“相邻的两颗糖”均为自己，从而这颗糖在这秒钟一定会被吃掉。）</p>
+<p>容易发现，最终的情况一定是所有的糖都被吃掉了，而不会有剩余。琦琦想知道，每颗糖是在第几秒被吃掉的？</p>
+<p>琦琦还要忙着去给乔乔买棒棒糖吃，这么简单的任务当然就交给你来完成啦！</p>
+<h2 id="解题思路-2"><a href="#解题思路-2" class="headerlink" title="解题思路"></a>解题思路</h2><p>发现糖被拿走有明显的先后顺序,于是考虑用queue来记录顺序,用链表来模拟剩下的糖.由于每个糖不能被多次拿走但是又有可能被重复统计,所以还要开个bool数组记录是否还存在.</p>
+<h2 id="code-2"><a href="#code-2" class="headerlink" title="code"></a>code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span> ;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn = <span class="number">1e6</span>+<span class="number">5</span> ;</span><br><span class="line"><span class="keyword">int</span> n, m, val[maxn], lk[maxn][<span class="number">2</span>], t[maxn] ;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> L lk][0</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> R lk][1</span></span><br><span class="line"><span class="keyword">bool</span> inq[maxn] ;</span><br><span class="line"><span class="built_in">queue</span> &lt;<span class="keyword">int</span>&gt; Q ;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">check</span> <span class="params">( <span class="keyword">int</span> x )</span> </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> x[val] &gt;= x[L][val] &amp;&amp; x[val] &gt;= x[R][val] ;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i, x, u, v ;</span><br><span class="line">	<span class="built_in">scanf</span> (<span class="string">"%d"</span>, &amp;n) ;</span><br><span class="line">	<span class="keyword">for</span> ( i = <span class="number">1</span> ; i &lt;= n ; i ++ ) &#123;</span><br><span class="line">		<span class="built_in">scanf</span> (<span class="string">"%d"</span>, val+i) ;</span><br><span class="line">		i[L] = i<span class="number">-1</span>, i[R] = i+<span class="number">1</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="number">1</span>[L] = n, n[R] = <span class="number">1</span> ;</span><br><span class="line">	<span class="keyword">for</span> ( i = <span class="number">1</span> ; i &lt;= n ; i ++ ) &#123;</span><br><span class="line">		<span class="keyword">if</span> (check(i)) &#123;</span><br><span class="line">			Q.push(i) ;</span><br><span class="line">			inq[i] = <span class="number">1</span> ;</span><br><span class="line">			t[i] = <span class="number">1</span> ;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">while</span> (!Q.empty()) &#123;</span><br><span class="line">		x = Q.front() ;</span><br><span class="line">		Q.pop() ;</span><br><span class="line">		u = x[L], v = x[R] ;</span><br><span class="line">		u[R] = v, v[L] = u ;</span><br><span class="line">		<span class="keyword">if</span> (!inq[u] &amp;&amp; check(u)) &#123;</span><br><span class="line">			Q.push(u) ;</span><br><span class="line">			inq[u] = <span class="number">1</span> ;</span><br><span class="line">			t[u] = t[x]+<span class="number">1</span> ;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (!inq[v] &amp;&amp; check(v)) &#123;</span><br><span class="line">			Q.push(v) ;</span><br><span class="line">			inq[v] = <span class="number">1</span> ;</span><br><span class="line">			t[v] = t[x]+<span class="number">1</span> ;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> ( i = <span class="number">1</span> ; i &lt;= n ; i ++ )</span><br><span class="line">		<span class="built_in">printf</span> (<span class="string">"%d\n"</span>, t[i]) ;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="stack"><a href="#stack" class="headerlink" title="stack"></a>stack</h1><h2 id="题目描述-4"><a href="#题目描述-4" class="headerlink" title="题目描述"></a>题目描述</h2><p>琦琦有很多颗彩虹糖，每一颗彩虹糖有一个美味度（是不超过 109 的非负整数），不同的彩虹糖可能有相同的美味度。</p>
+<p>琦琦有一个大大的袋子，用来存放彩虹糖，初始时袋子为空。</p>
+<p>琦琦每次会选择以下操作之一进行：</p>
+<ol>
+<li>琦琦把一颗全新的彩虹糖放到袋子中。</li>
+<li>琦琦从袋子中拿出其中<strong>最晚</strong>被放入袋子的那颗糖。</li>
+</ol>
+<p>每次操作后，琦琦需要知道袋子中最美味的糖的美味度。</p>
+<p>琦琦还要忙着去吃乔乔的棒棒糖，这么简单的任务当然就交给你来完成啦！</p>
+<h2 id="解题思路-3"><a href="#解题思路-3" class="headerlink" title="解题思路"></a>解题思路</h2><p>用一个stack存储现在袋子里有哪些糖,再用一个multiset用来输出最大的美味度.</p>
+<h2 id="code-3"><a href="#code-3" class="headerlink" title="code"></a>code</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span> ;</span><br><span class="line"><span class="built_in">stack</span> &lt;<span class="keyword">int</span>&gt; stk ;</span><br><span class="line"><span class="built_in">multiset</span> &lt;<span class="keyword">int</span>&gt; s ;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> _, o, x ;</span><br><span class="line">	<span class="built_in">scanf</span> (<span class="string">"%d"</span>, &amp;_) ;</span><br><span class="line">	<span class="keyword">while</span> (_--) &#123;</span><br><span class="line">		<span class="built_in">scanf</span> (<span class="string">"%d"</span>, &amp;o) ;</span><br><span class="line">		<span class="keyword">if</span> (o == <span class="number">1</span>) &#123;</span><br><span class="line">			<span class="built_in">scanf</span> (<span class="string">"%d"</span>, &amp;x) ;</span><br><span class="line">			stk.push(x) ;</span><br><span class="line">			s.insert(x) ;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (!stk.empty()) &#123;</span><br><span class="line">			x = stk.top() ;</span><br><span class="line">			s.erase(s.lower_bound(x)) ;</span><br><span class="line">			stk.pop() ;</span><br><span class="line">		&#125;</span><br><span class="line">		x = stk.empty()?<span class="number">-1</span>:(*s.rbegin()) ;</span><br><span class="line">		<span class="built_in">printf</span> (<span class="string">"%d\n"</span>, x) ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>菲菲是我的小媳妇<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/08/new%20blog/" class="archive-article-date">
-  	<time datetime="2019-11-08T08:08:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/08/new%20blog/">啊建立了一个新博客</a>
-    </h1>
-  
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">编程</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/10/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%AC%E4%BA%8C%E6%AC%A1OJ%E4%BD%9C%E4%B8%9A/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/12/tmp/%E4%B8%8A%E5%AD%A6%E5%89%8D%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/" class="archive-article-date">
-  	<time datetime="2019-08-12T04:39:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-12</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/11/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%AC%E4%B8%80%E6%AC%A1OJ%E4%BD%9C%E4%B8%9A/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">数据结构第一次OJ作业</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/12/tmp/%E4%B8%8A%E5%AD%A6%E5%89%8D%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/">上学前的最后一天</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#烤馍片"><span class="toc-number">1.</span> <span class="toc-text">烤馍片</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#题目描述"><span class="toc-number">1.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#code"><span class="toc-number">1.2.</span> <span class="toc-text">code</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#priorityQ"><span class="toc-number">2.</span> <span class="toc-text">priorityQ</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#题目描述-1"><span class="toc-number">2.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解题思路"><span class="toc-number">2.2.</span> <span class="toc-text">解题思路</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Q"><span class="toc-number">3.</span> <span class="toc-text">Q</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#题目描述-2"><span class="toc-number">3.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解题思路-1"><span class="toc-number">3.2.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#code-1"><span class="toc-number">3.3.</span> <span class="toc-text">code</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#彩虹"><span class="toc-number">4.</span> <span class="toc-text">彩虹</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#题目描述-3"><span class="toc-number">4.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解题思路-2"><span class="toc-number">4.2.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#code-2"><span class="toc-number">4.3.</span> <span class="toc-text">code</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#stack"><span class="toc-number">5.</span> <span class="toc-text">stack</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#题目描述-4"><span class="toc-number">5.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解题思路-3"><span class="toc-number">5.2.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#code-3"><span class="toc-number">5.3.</span> <span class="toc-text">code</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/10/tmp/%E6%B9%98%E6%B3%89%E9%85%92%E5%8E%82/" class="archive-article-date">
-  	<time datetime="2019-08-10T04:30:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-10</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/10/tmp/%E6%B9%98%E6%B3%89%E9%85%92%E5%8E%82/">湘泉酒厂</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/10/tmp/%E5%92%8C%E5%B0%8F%E8%A5%BF%E6%B9%96%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%93%AD/" class="archive-article-date">
-  	<time datetime="2019-07-10T03:52:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/10/tmp/%E5%92%8C%E5%B0%8F%E8%A5%BF%E6%B9%96%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%93%AD/">和小西湖第一次哭</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/">&amp;laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-    </nav>
   
 
 
@@ -295,8 +420,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
